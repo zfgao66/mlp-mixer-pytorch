@@ -1,0 +1,24 @@
+03/15/2022 18:54:39 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 08:54:34 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 08:54:34 - INFO - utils -   Using Mixer
+03/16/2022 09:01:47 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 09:01:47 - INFO - utils -   Using Mixer
+03/16/2022 10:17:56 - INFO - __main__ -   '==> Preparing data..
+03/16/2022 10:17:57 - INFO - __main__ -   ==> Building model..
+03/16/2022 10:20:01 - INFO - __main__ -   '==> Preparing data..
+03/16/2022 10:20:03 - INFO - __main__ -   ==> Building model..
+03/16/2022 16:21:34 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 16:21:34 - INFO - utils -   Using Mixer
+03/16/2022 16:22:55 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 16:22:55 - INFO - utils -   Using MLPMixer
+03/16/2022 16:24:44 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 16:24:44 - INFO - utils -   Using MLPMixer
+03/16/2022 16:25:48 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 16:25:48 - INFO - utils -   Using MLPMixer
+03/16/2022 16:25:51 - INFO - tools -   --------------------------------------------------------------------------------
+03/16/2022 16:25:51 - INFO - tools -   Total parameters for the network are: 7920138
+03/16/2022 16:26:06 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 16:26:06 - INFO - utils -   Using MLPMixer
+03/16/2022 16:26:11 - INFO - tools -   --------------------------------------------------------------------------------
+03/16/2022 16:26:11 - INFO - tools -   Total parameters for the network are: 7920138
+03/16/2022 16:26:11 - INFO - tools -   Training Model... 
