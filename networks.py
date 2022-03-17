@@ -81,11 +81,13 @@ class MLPMixer(nn.Module):
 
         assert image_size % patch_size == 0, 'Image dimensions must be divisible by the patch size.'
         self.num_patch =  (image_size// patch_size) ** 2
+        # self.to_patch_embedding = nn.Sequential(
+        #     nn.Conv2d(in_channels, dim, patch_size, patch_size),
+        #     Rearrange('b c h w -> b (h w) c'),
+        # )
         self.to_patch_embedding = nn.Sequential(
-            nn.Conv2d(in_channels, dim, patch_size, patch_size),
-            Rearrange('b c h w -> b (h w) c'),
-        )
-
+        Rearrange('b c (h p1) (w p2) -> b (h w) (p1 p2 c)', p1 = patch_size, p2 = patch_size),
+        nn.Linear((patch_size ** 2) * in_channels, dim))
         self.mixer_blocks = nn.ModuleList([])
 
         for _ in range(depth):

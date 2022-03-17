@@ -22,3 +22,9 @@
 03/16/2022 16:26:11 - INFO - tools -   --------------------------------------------------------------------------------
 03/16/2022 16:26:11 - INFO - tools -   Total parameters for the network are: 7920138
 03/16/2022 16:26:11 - INFO - tools -   Training Model... 
+03/16/2022 17:48:20 - INFO - __main__ -   Begin Training Processing.
+03/16/2022 17:48:20 - INFO - utils -   Using MLPMixer
+03/16/2022 17:48:24 - INFO - tools -   --------------------------------------------------------------------------------
+03/16/2022 17:48:24 - INFO - tools -   Total parameters for the network are: 13429770
+03/16/2022 17:48:24 - INFO - tools -   Training Model... 
+03/16/2022 17:51:13 - INFO - __main__ -   Hyper parameters: 

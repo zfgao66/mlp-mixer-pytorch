@@ -1,7 +1,7 @@
 set -x
 base_dir=/home/zfgao/work/mlp-mixer-pytorch
-check_point_dir=/mnt/zfgao/checkpoint/mlp-mixer-pytorch/
-data_path=/mnt/zfgao/
+check_point_dir=/home/zfgao/checkpoint/mlp-mixer-pytorch/
+data_path=/home/zfgao/data
 gpu_num=$1
 function get_gpu_count() {
   str=$1
@@ -18,7 +18,7 @@ function run_cifar(){
     }
 
 # run_cifar 3 Vanilla_Mixer CIFAR10 150 --epoch=100\ --model=MLPMixer\ --patch_size=2\ --dim=512\ --depth=12\ 
-run_cifar 0 Vanilla_Mixer_patch4_dim512_depth12_tokendim128_channeldim1024 CIFAR10 32 --epoch=100\ --model=MLPMixer\ --patch_size=4\ --dim=512\ --depth=12\ --token_dim=128\ --channel_dim=1024\  
+run_cifar 0 Vanilla_Mixer_patch4_dim512_depth12_tokendim128_channeldim1024 CIFAR10 300 --epoch=100\ --model=MLPMixer\ --patch_size=4\ --dim=512\ --depth=12\ --token_dim=128\ --channel_dim=1024\  
 
 
 

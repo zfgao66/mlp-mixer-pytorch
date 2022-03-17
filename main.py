@@ -34,16 +34,24 @@ def main():
     
 
     args = parser.parse_args()
+    
     logger = logging.getLogger(__name__)
-    logger.info(f"Args:{args}")
-    # logger.info(f"Total HyperPrameters:{args.__dict__{}}")
     logging.basicConfig(
         filename=args.log_file,
         format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
         datefmt="%m/%d/%Y %H:%M:%S",
         level=logging.INFO)
 
-    logger = logging.getLogger(__name__)
+    # Display all hyperparameters
+    logger.info("Hyper parameters: ")
+    for i in vars(args):
+        temp = str(i) + " " + str(getattr(args, i))
+        logger.info(temp) 
+    
+    # logger.info(f"Args:{args}")
+    # logger.info(f"Total HyperPrameters:{args.__dict__{}}")
+    
+    # logger = logging.getLogger(__name__)
     args.device = 'cuda' if torch.cuda.is_available() else 'cpu'
     ##################### dataset
     channel, im_size, num_classes, class_names, mean, std, dst_train, dst_test = get_dataset(args.dataset, args.data_path)
@@ -90,5 +98,6 @@ def main():
     
     logger.info("Finished Training ...")
 
+    
 if __name__ == '__main__':
     main()
